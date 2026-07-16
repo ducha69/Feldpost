@@ -1,48 +1,76 @@
-# Project Template (GitHub Pages)
+#Feldpost Entropy Analysis
 
-A tiny static website for a course project. No build step, no server, nothing to
-keep paying for. It is just a few files that GitHub Pages serves as a web page,
-which is why it will still work years from now.
+A digital humanities project investigating the informational content of German Second World War field post (Feldpost) letters using methods from information theory, computational linguistics, and statistical analysis.
 
-## What's here
+## Overview
 
-- `index.html` - the page itself. Edit the text here.
-- `style.css` - the look. Change one color near the top to re-skin it.
-- `figure.png` - your main figure. Replace this file with your own.
-- `data.csv` - your data, in an open and machine-readable format.
-- `LICENSE` - the terms others may reuse your work under (CC BY 4.0).
-- `.nojekyll` - tells GitHub to serve the files exactly as they are.
+This project explores whether German field post letters were primarily repetitive and formulaic or whether they contained substantial new information throughout the war.
 
-## Put it online with GitHub Pages
+Instead of relying solely on qualitative interpretations, the project applies quantitative methods derived from Claude Shannon's Information Theory to measure the informational density of historical correspondence.
 
-1. Make a free account at github.com.
-2. Make a new **public** repository. Any name works. For a personal site the
-   simplest name is `YOUR-USERNAME.github.io`.
-3. Add these files to it. The no-terminal way: on the repository page choose
-   **Add file -> Upload files**, drag everything in, and **Commit**. The git way:
-   `git clone` the repository, copy the files in, then `git add .`,
-   `git commit -m "first version"`, `git push`.
-4. In the repository open **Settings -> Pages**. Under **Build and deployment**
-   set **Source** to **Deploy from a branch**, choose the **main** branch and the
-   **/ (root)** folder, and click **Save**.
-5. Wait a minute, then visit `https://YOUR-USERNAME.github.io/REPO-NAME/`.
+The website presents interactive visualizations and analyses of entropy, redundancy, and lexical diversity to better understand how soldiers communicated under wartime conditions.
 
-Every time you push a change, the live site updates on its own.
+## Research Question
 
-## Make it yours
+> Are German field post letters predominantly repetitive communications, or do they remain informationally dense and surprising despite censorship and recurring conventions?
 
-- Edit the title, your name, the abstract, and the table in `index.html`.
-- Drop in your own `figure.png` and `data.csv`.
-- Rewrite this README to say what your project is and how to rebuild it.
-- Change the accent color at the top of `style.css`.
+To answer this question, the project computes various information-theoretic measures and compares them across individual letters and chronological periods.
 
-## Going further
+## Methods
 
-This page is fully static: the data are typed straight into the HTML. The next
-step, if you want a table that updates whenever you edit a data file, is to load
-`data.csv` or a `data.json` with a few lines of JavaScript. That keeps the data
-separate from the page and still needs no server.
+The project employs several computational techniques, including:
+
+- Shannon entropy
+- Character entropy
+- Text redundancy
+- Lexical diversity
+- Frequency analysis
+- Statistical visualization
+- Time-series analysis
+
+Python was used for preprocessing, statistical calculations, and visualization.
+
+## Dataset
+
+The analyses are based on a corpus of digitized German field post letters written during the Second World War.
+
+The texts were cleaned and standardized before being processed computationally.
+
+## Key Findings
+
+Preliminary analyses indicate that:
+
+- Field post letters exhibit moderate redundancy but are not excessively repetitive.
+- Despite conventional greetings and recurring themes, the letters contain substantial amounts of new information.
+- Information density varies across the war, suggesting changing communication patterns under different military circumstances.
+
+These findings support the interpretation that field post letters constitute valuable historical sources rather than merely formulaic correspondence.
+
+## Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- HTML / CSS / JavaScript
+- GitHub Pages
+
+## Website
+
+The interactive project website is available at:
+
+https://ducha69.github.io/Feldpost/
+
+
+## Citation
+
+If you use this project in academic work, please cite the repository and the accompanying website.
 
 ## License
 
-Text, images, and data: CC BY 4.0 (reuse with credit). See `LICENSE`.
+This project is released under the MIT License unless otherwise stated.
+
+---
+
+*This project combines methods from Digital Humanities, Information Theory, and Computational Linguistics to study historical wartime correspondence.*
