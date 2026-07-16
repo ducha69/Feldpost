@@ -15,7 +15,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 17px/1.6 Georgia, "Times New Roman", serif;
+  font: 17px/1.6 Georgia, "Arial", serif;
 }
 
 main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
